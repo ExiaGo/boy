@@ -1,0 +1,197 @@
+.box{
+	width: 1080px;
+	margin:0 auto;
+	margin-bottom: 5px;
+}
+
+.top_box{
+	margin-bottom: 5px;
+	width: 1080px;
+	height: 120px;
+}
+
+.sign img, .sign{
+	width: 200px;
+	height: 120px;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.webName img{
+	width: 280px;
+	height: 120px;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.background1{
+	background-image: url(../pic/天空.png);
+	width: 600px;
+	height: 120px;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.search{
+	float: right;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+
+.searchButton{
+	float: right;
+	margin-right: 10px; 
+	margin-top: 15px;
+}
+
+.clock{
+	margin-right: 0px;
+	margin-top: 50px;
+	float: right;
+	width: 200px;
+	height: 30px;
+	font-family: "arial";
+}
+
+#list>li{
+	width: 80px;
+	height: 20px;
+	float: left;
+	text-align: center;
+	line-height: 20px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+
+.two_list{
+	width: 80px;
+	height: 80px;
+	background: #ff3eff;
+	display: none;
+	padding: 0;
+	line-height: 26px;
+	font-family: "微软雅黑";
+}
+
+
+ul li{
+	list-style-type: none;
+}
+
+a{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover{
+	color: blue;
+}
+
+.game{
+	width: 1080px;
+	height: 1800px;
+/*	background-color: #989191;*/
+	background: rgba(200, 54, 54, 0.3);  /*透明色效果 */
+	margin-top: 5px;
+	border: 3px solid #9F3838;
+	font-family: "微软雅黑";
+	font-size: 18px;
+}
+
+.fuel{
+	width: 200px;
+	height: 330px;
+	padding-top: 20px;
+	padding-left: 20px;
+	text-align: center;
+	float: left;
+}
+
+.fuel img{
+	width: 200px;
+	height: 300px;
+}
+
+.codol{
+	width: 400px;
+	height: 330px;
+	padding-top: 20px;
+	padding-left: 20px;
+	text-align: center;
+	float: left;
+}
+
+.codol img{
+	width: 400px;
+	height: 300px;
+}
+
+.page_num{
+	height: 40px;
+	margin-top: 1700px;
+	text-align: center;
+}
+
+.page_num a{
+	border: 1px solid #e8e8e8;
+	text-decoration: none;
+	margin: 5px;
+	padding: 5px 10px;
+}
+
+.page_num a:hover, .page_num a:active{
+	color: #fff;
+	background-color: #cc1b1b;
+}
+
+.connection{
+	width: 100%;
+	height: 185px;
+	clear: both;
+	background-color: #EAE6E6;
+}
+
+.bottom_box{
+	width: 1080px;
+	height: 180px;
+	margin: 0 auto;
+}
+
+.link{
+	background-color: #cf9;
+	width: 535px;
+	height: 180px;
+	float: left;
+}
+
+.link span, .link_2 span{
+	margin-left: 20px;
+}
+
+.link_2{
+	background-color: #feb;
+	width: 535px;
+	height: 180px;
+	float: right;
+}
+
+.fixed_box{
+	width: 100px;
+	height: 200px;
+	position: fixed;
+	left: 5px;
+	top: 200px;
+	background-color: #f0bbff;
+}
+
+.name{
+	width: 50px;
+	height: 36px;
+	margin: 10px auto;
+	font-family: "微软雅黑";
+}

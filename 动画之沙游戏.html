@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画之沙游戏</title>
+	<link rel="stylesheet" type="text/css" href="css/main_game.css">
+
+	<script type="text/javascript" src="./js/dhzs_game.js"></script>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var oUl = document.getElementById("list");  //获得list的元素表
+			var aLi = oUl.children;                 //aLi就是导航1元素表
+			for(var i = 0; i<aLi.length; i++){      //循环第i个导航
+				aLi[i].onmouseover = function(){
+					this.children[0].style.display = "block";   //this.children[0]就是选中当前的导航的二级菜单，0就是two_list
+				};
+				aLi[i].onmouseout = function(){
+					this.children[0].style.display = "none";
+				};
+			};
+		};
+	</script>
+	<link rel="shortcut icon" href="./pic/favicon.ico">
+</head>
+<body onload="osTime()">
+    <div class="box">
+    	<div class="top_box">
+			<div class="sign"><img src="./pic/标志.png"></div>
+			<div class="webName"><a href="动画之沙.html"><img src="./pic/动画之沙游戏相关.png" alt="标题"></a></div>
+			<div class="background1">
+				<div class="searchButton">
+					<input type="button" value="search" onclick="search()">
+				</div>
+				<div class="search">
+					<input type="text">
+				</div>
+				
+				<div class="nav1">
+					<ul id="list">
+						<li class="one_list">游戏频道
+							<ul class="two_list">
+								<li><a href="javascript:0">游戏介绍</a></li>
+								<li>二级菜单</li>
+								<li>二级菜单</li>
+							</ul>
+						</li>
+						<li class="one_list">导航2
+							<ul class="two_list">
+								<li>二级菜单</li>
+								<li>二级菜单</li>
+								<li>二级菜单</li>
+							</ul>
+						</li>
+						<li class="one_list">导航3
+							<ul class="two_list">
+								<li>二级菜单</li>
+								<li>二级菜单</li>
+								<li>二级菜单</li>
+							</ul>
+						</li>															
+					</ul>
+				</div><!-- nav1 end -->
+				<div class="clock">
+					<label id="clock"></label>
+				</div>
+				<div class="gate">
+					<button><img src="./pic/留言板.jpg" alt="留言板" onclick="goto()"><br>留言板</button>
+				</div>
+			</div><!-- background1 end -->
+		</div><!-- top_box end -->
+		<div class="game">
+			<div class="fuel_top">
+			    <div class="fuel_page">
+			    	<img src="./pic/game/fuel1.jpg" alt="">
+			    </div>
+				<div class="fuel_content" id="fuel">
+					<h2 style="color: blue">燃料fuel</h2>
+					<p>第一个要介绍的游戏是一款赛车类游戏，其名字为<a href="http://baike.baidu.com/link?url=Z78whA5w1b7ByHjx_jsEpTge2m6nSVEp9eNl6VGgXmS95ASSg-61v8i-fwXpulEmq-RF6ySE1tMwkBrAwfNrtmLhGTh62wiKyHqsCFuAYwa">fuel</a>这个赛车游戏的过人之处就是其地图，不仅仅是大，而且十分的多，想当年我大学时玩这个游戏，玩了一个学期都没有把这个游戏的三分之一地图打通，聚游戏介绍，它的地图有14000平方公里，有19个区域，而且每一个都不一样，有森林，有废墟，有山路，有雪山。只要这个世界上有的，游戏中都应有尽有，而且游戏中的车也有好几十种，加上不同的比赛模式，不限定的比赛路线，可玩性爆表，说得我都想重新玩玩啦！</p>
+					<p>附上游戏<a href="http://www.gamersky.com/Soft/201202/32817.shtml">下载地址</a></p>
+				</div>
+			</div><!-- fuel_top end -->
+			<div class="pic">
+				<div class="fuel_pic" id="fuel_pic">
+					<h2>游戏精彩截图</h2>
+					<a href="./pic/game/fuel2.jpg" target="_blank"><img src="./pic/game/fuel2.jpg" alt=""></a>
+					<a href="./pic/game/fuel3.jpg" target="_blank"><img src="./pic/game/fuel3.jpg" alt=""></a>
+					<a href="./pic/game/fuel4.jpg" target="_blank"><img src="./pic/game/fuel4.jpg" alt=""></a>
+					<a href="./pic/game/fuel5.jpg" target="_blank"><img src="./pic/game/fuel5.jpg" alt=""></a>
+				</div>
+				<div class="input">
+					<input type="button" id="butLeft" name="name" value="◀︎" onclick="next()">
+					<input type="button" id="butRight" name="name" value="▶︎" onclick="next()">
+				</div>
+			</div><!-- pic end -->
+			<div class="fuel_video">
+				<embed src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjMyODQwNjA4/v.swf' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+			</div><!-- fuel_video -->
+			<div class="fuel_video_content">
+				<p>游戏精选视频</p><p>这个是游戏fuel传奇模式山地车赛，主要是使用山地车与对手竞速，游戏可以看出地图是相当的开阔的，而且实际上是任意走的，只要最快到达终点就是胜利者。这里说说，这个是我录制的视频，传奇模式就是最困难的模式，哈哈，开车技术还行吧，我可是也有驾照的喔~~</p>
+			</div><!-- fuel_video_content -->
+			<div class="rectangle">
+				<strong><span>游戏介绍分割线</span></strong>
+			</div>
+			<div class="codol" id="codol">
+				<img src="./pic/game/codol.jpg" style="width: 100%" alt="">
+				<strong>
+				<h1 style="color: blue; font-family: '微软雅黑'; margin-left: 30px;">使命召唤ol</h1>
+				<p>说起COD，即<a href="http://baike.baidu.com/link?url=D7RyxQv-Uun0zQmcNntFq6GvtQ1uybiagJ9fuQr52rBWAaaO4B58kAwveMjnO3AzHlDy1DUmwz9RRiyJv1LrhB84srBj7ZLN5NW6c3QqduC7wOX2KaZsyT1ec4BVZEHr" target="_blank">使命召唤</a>，玩游戏的人应该都听说过的吧，今天来介绍它的中国网游系列由游戏发行商Activision（动视）旗下工作组Raven制作的CODol，即使命召唤ol，腾讯公司代理。</p>
+				<p>因为这里我是在介绍游戏，所以说或多或少会带有个人感情色彩来评论一个游戏，多以请大家多多包涵，而且这个网站就是为了让大家评论的，所以嘛，现在就让我稍微说说这个中国网游系列----使命召唤ol</p>
+				<p>使命召唤ol到今天为止，记忆中大概已经测试了三四年了吧，而我也就玩了一年多，游戏的重心当然是多人对战，而玩过该系列人游戏玩家们也一定知道使命召唤的特色，对！那就是爽快的多人击杀，连杀奖励，技术好的话可以说是one man army呀！而这个中国版的使命召唤系列，也有延续使命召唤的传统，Raven（渡鸦）这个制作组也花了自己的心思去做出了这个游戏，从游戏中来看，游戏包括了现代战争系列和黑色行动系列，也加入了原来系列没有的地图，武器，模式和人物，游戏特效也和现在最新的系列无限战争也不一样，毕竟是用以前动视公司的旧引擎制作的，当时对于现在中国网络上别的第一人称射击游戏网游来说，已经是很不错了。</p>
+				<p>不过其实这个有虽说是已经在公测了，但是，问题还是有不少，竞技类网游最大的问题当然是多人游戏的平衡性，这个游戏我已经打过上千盘了，但是基本上都是一边倒，总是要不就是不断的一边赢，另外一边也是挨打的份，这个应该就是游戏系统和游戏匹配上的问题了吧，因为越高级的人，能使用的武器越好，技能越厉害，当然腾讯游戏里，你可以付人民币买到越级的武器和技能，但是老兵就是比新兵了解游戏地图，所以给钱也只是稍微缩小一点差距而已，而游戏中的经验和猥琐，还是老兵虐新兵，所以说，能留下打的都是以前就被虐过的，只是现在成老兵，有些还成为大神。第二个问题就是匹配，绝大部分时间都是老对新，所以就大大加剧了游戏一边倒的情况了，匹配越来越不好，也是人少的在作怪，人少就是老兵虐走新人，这样的恶性循环虽说现在已经有所改善，但是黑队打散人现在已经不能改变了，我觉得遇到黑队就走吧，因为除了开挂你是打不过的了，说起这个开挂行为，实际上我是十分的痛恶的，但是这个游戏和腾讯大多游戏一样，也是有不少，还是请大家玩多人网络游戏不要作弊了，这只是说明作弊者其实就是现实中的失败者罢了。一个公平的游戏环境还是要大家努力维护的呀。</p>
+				<p>最后在说说，我比较推荐这个游戏，其实最好就是有一两个小伙伴们陪着自己一块玩，我不是鼓励开黑，但是只是一两个人不会对游戏做出干扰，但是却玩的大家都开心，而且玩的游戏玩家又会增多，何乐而不为呢？</p>
+				</strong>
+				<div class="codol_video">
+					<embed height="400" width="520" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="http://static.hdslb.com/miniloader.swf" flashvars="aid=7420063&page=1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
+
+					<embed height="400" width="520" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="http://static.hdslb.com/miniloader.swf" flashvars="aid=1864092&page=1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
+				</div>
+				<div class="codol_video_content">
+					<p>左边是2016年12月游戏最新的官方宣传视频，刚好是发布新模式，这个模式是僵尸生存，四人合作对抗流水般的僵尸。右边的视频是多人游戏的真人宣传视频，和历代使命召唤一样，都采用了玩家的视觉+明星的宣传模式，还算好看吧。</p>
+					<br><p>假如您喜欢上面的内容，又有想说的话，请到<a href="动画之沙 Message.html" target="_blank">留言区</a>畅所欲言吧。</p>
+				</div>
+			</div>
+		</div><!-- game end -->
+
+		<div class="fixed_box">
+			<div class="name"><a href="javascript:returnTop();">TOP</a></div>
+			<div class="name"><a href="#fuel">fuel</a></div>
+			<div class="name"><a href="#codol">codol</a></div>
+			<div class="name"><a href="#connection">导航3</a></div>
+		</div><!-- fixed_box -->
+	</div><!-- box end -->
+	<div id="connection" class="connection">
+		<div class="bottom_box">
+			<div class="link">
+				<br><span>友情链接：<a href="http://tieba.baidu.com/f?kw=%B6%AF%B8%D0%D0%C2%CA%C6%C1%A6">动感新势力</a></span>
+			</div>
+			<div class="link_2">
+				<br><span>站长：<a href="http://tieba.baidu.com/home/main?id=4a31c9e4c9b1b4efc8cb4405&fr=userbar">射杀达人</a></span>
+			</div>
+		</div><!-- bottom_box end -->
+	</div><!-- connection end -->
+</body>
+</html>

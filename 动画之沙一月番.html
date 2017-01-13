@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画之沙一月番</title>
+	<link rel="stylesheet" type="text/css" href="css/main_1.css">
+	<script type="text/javascript" src="./js/dhzs_1.js"></script>
+	 <script type="text/javascript">
+		window.onload = function(){
+			var oUl = document.getElementById("list");  //获得list的元素表
+			var aLi = oUl.children;                 //aLi就是导航1元素表
+			for(var i = 0; i<aLi.length; i++){      //循环第i个导航
+				aLi[i].onmouseover = function(){
+					this.children[0].style.display = "block";   //this.children[0]就是选中当前的导航的二级菜单，0就是two_list
+				};
+				aLi[i].onmouseout = function(){
+					this.children[0].style.display = "none";
+				};
+			};
+		};
+	</script>
+	<link rel="shortcut icon" href="./pic/favicon.ico"><!-- 网页图标 -->
+</head>
+<body onload="osTime()">
+    <div class="box">
+		<div class="sign"><img src="./pic/标志.png"></div>
+		<div class="webName"><a href="动画之沙.html"><img src="./pic/动画之沙.png" alt="标题"></a></div>
+		<div class="background1">
+			<div class="searchButton">
+				<input type="button" value="search" onclick="search()">
+			</div>
+			<div class="search">
+				<input type="text">
+			</div>
+			
+			<div class="nav1">
+				<ul id="list">
+					<li class="one_list">游戏频道
+						<ul class="two_list">
+							<li><a href="动画之沙游戏目录.html">游戏介绍</a></li>
+							<li>二级菜单</li>
+							<li>二级菜单</li>
+						</ul>
+					</li>
+					<li class="one_list">导航2
+						<ul class="two_list">
+							<li>二级菜单</li>
+							<li>二级菜单</li>
+							<li>二级菜单</li>
+						</ul>
+					</li>
+					<li class="one_list">导航3
+						<ul class="two_list">
+							<li>二级菜单</li>
+							<li>二级菜单</li>
+							<li>二级菜单</li>
+						</ul>
+					</li>															
+				</ul>
+			</div>
+			<div class="clock">
+				<label id="clock"></label>
+			</div>
+		</div><!-- background1 end -->
+		<div class="nav">
+			<ul class="list_2"  id="list_2">
+				<li style="background: red" onmouseover="changeC(this)" onmouseout="changeC(this)"><a href="#">一月番</a></li>
+				<li onmouseover="changeC(this)" onmouseout="changeC(this)"><a href="动画之沙四月番.html">四月番</a></li>
+				<li onmouseover="changeC(this)" onmouseout="changeC(this)"><a href="动画之沙七月番.html">七月番</a></li>
+				<li onmouseover="changeC(this)" onmouseout="changeC(this)"><a href="动画之沙十月番.html">十月番</a></li>
+			</ul>
+		</div><!-- nav end -->
+		<div class="content">
+			
+		</div><!-- content end -->
+		<div class="fixed_box">
+			<div class="name"><a href="javascript:returnTop();">TOP</a></div>
+			<div class="name" style="font-weight: bold; text-shadow: 5px 3px 5px #FAFC06"><a href="#">2016年</a></div>
+			<div class="name"><a href="#">2017年</a></div>
+			<div class="name"><a href="#">2018年</a></div>
+		</div><!-- fixed_box -->
+	</div><!-- box end -->
+	<div id="connection" class="connection">
+		<div class="bottom_box">
+			<div class="link">
+				<br><span>友情链接：<a href="http://tieba.baidu.com/f?kw=%B6%AF%B8%D0%D0%C2%CA%C6%C1%A6">动感新势力</a></span>
+			</div>
+			<div class="link_2">
+				<br><span>站长：<a href="http://tieba.baidu.com/home/main?id=4a31c9e4c9b1b4efc8cb4405&fr=userbar">射杀达人</a></span>
+			</div>
+		</div><!-- bottom_box end -->
+	</div><!-- connection end -->
+</body>
+</html>

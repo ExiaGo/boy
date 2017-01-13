@@ -1,0 +1,429 @@
+.box{
+	width: 1080px;
+	margin:0 auto;
+	margin-bottom: 5px;
+}
+
+.sign img, .sign{
+	width: 200px;
+	height: 120px;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.webName img{
+	width: 280px;
+	height: 120px;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.background1{
+	background-image: url(../pic/天空.png);
+	width: 600px;
+	height: 120px;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.search{
+	float: right;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+
+.searchButton{
+	float: right;
+	margin-right: 10px; 
+	margin-top: 15px;
+}
+
+.clock{
+	margin-right: 0px;
+	margin-top: 50px;
+	float: right;
+	width: 200px;
+	height: 30px;
+	font-family: "arial";
+}
+
+#list>li{
+	width: 80px;
+	height: 20px;
+	float: left;
+	text-align: center;
+	line-height: 20px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+
+.two_list{
+	width: 80px;
+	height: 80px;
+	background: #ff3eff;
+	display: none;
+	padding: 0;
+	line-height: 26px;
+	font-family: "微软雅黑";
+}
+
+
+.nav{
+	background-image: url(../pic/标题栏.jpg);
+	width: 1080px;
+	height: 80px;
+	clear: both;
+	margin: 0 auto;
+}
+
+.list_2 li{
+	width: 240px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 28px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	color: red;
+	float: left;
+	text-align: center;
+}
+
+.two{
+	display: none;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+a{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover{
+	color: blue;
+}
+
+#myFocus{
+	width: 1000px;
+	height: 310px;
+	margin: 0 auto;
+	margin-top: 5px;
+	overflow: hidden;
+}
+
+.loading{
+	width: 1000px;
+	height: 310px;
+	margin: 0 auto;
+	margin-top: 0px;
+	overflow: hidden;
+}
+
+.pic img{
+	width: 1000px;
+}
+
+.background2{
+	background-image: url(../pic/星空.jpg);
+	width: 1080px;
+	height: 400px;
+	margin-top: -15px;
+}
+
+.content h2{
+	padding: 10px 20px;
+	color: #fff;
+}
+
+.content p{
+	padding: 10px 50px;
+	color: #fff;
+	font-family: "微软雅黑";
+	text-indent: 2em;
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.group{
+	width: 1080px;
+	height: 600px;
+	border: 3px solid #3BD1DC;
+	margin-top: 5px;
+	background-color: #A61818;
+}
+
+.A, .G{
+	width: 264px;
+	height: 600px;
+	float: left;
+}
+
+.M, .O{
+	width: 264px;
+	height: 600px;
+	float: left;
+}
+
+.group span{
+	width: 23px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+
+#g1{
+	color: #17EA9F;
+}
+
+#g2{
+	color: #EEF01B;
+}
+
+#g3{
+	color: #C5F807;
+}
+
+#g4{
+	color: #F90909;
+}
+
+/*动态样式*/
+/* Rectangle Out */
+.hvr-rectangle-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  /*background: #e1e1e1;*/
+  background-image: url(../pic/春天2.png);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-rectangle-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+/*  background: #2098d1;*/
+  background-image: url(../pic/动画.png);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
+  color: white;
+}
+.hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* Rectangle In */
+.hvr-rectangle-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+/*  background: #2098d1;*/
+  background-image: url(../pic/游戏.png);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-rectangle-in:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+/*  background: #e1e1e1;*/
+  background-image: url(../pic/夏天.jpg);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-rectangle-in:hover, .hvr-rectangle-in:focus, .hvr-rectangle-in:active {
+  color: white;
+}
+.hvr-rectangle-in:hover:before, .hvr-rectangle-in:focus:before, .hvr-rectangle-in:active:before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+/* Shutter In Horizontal */
+.hvr-shutter-in-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  /*background: #2098d1;*/
+  background-image: url(../pic/电影.png);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-in-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*background: #e1e1e1;*/
+  background-image: url(../pic/秋天.jpg);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-in-horizontal:hover, .hvr-shutter-in-horizontal:focus, .hvr-shutter-in-horizontal:active {
+  color: white;
+}
+.hvr-shutter-in-horizontal:hover:before, .hvr-shutter-in-horizontal:focus:before, .hvr-shutter-in-horizontal:active:before {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+/* Shutter Out Horizontal */
+.hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  /*background: #e1e1e1;*/
+  background-image: url(../pic/冬天.jpg);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*background: #2098d1;*/
+  background-image: url(../pic/其它.png);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+  color: white;
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/*动态样式结束*/
+
+.connection{
+	width: 100%;
+	height: 185px;
+	clear: both;
+	background-color: #EAE6E6;
+}
+
+.bottom_box{
+	width: 1080px;
+	height: 180px;
+	margin: 0 auto;
+}
+
+.link{
+	background-color: #cf9;
+	width: 535px;
+	height: 180px;
+	float: left;
+}
+
+.link span, .link_2 span{
+	margin-left: 20px;
+}
+
+.link_2{
+	background-color: #feb;
+	width: 535px;
+	height: 180px;
+	float: right;
+}
+
+.fixed_box{
+	width: 100px;
+	height: 200px;
+	position: fixed;
+	left: 5px;
+	top: 200px;
+	background-color: #f0bbff;
+}
+
+.name{
+	width: 50px;
+	height: 36px;
+	margin: 10px auto;
+	font-family: "微软雅黑";
+}

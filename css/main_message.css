@@ -1,0 +1,182 @@
+.box{
+	width: 1080px;
+	margin:0 auto;
+	margin-bottom: 5px;
+}
+
+.sign img, .sign{
+	width: 200px;
+	height: 120px;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.webName img{
+	width: 280px;
+	height: 120px;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.background1{
+	background-image: url(../pic/天空.png);
+	width: 600px;
+	height: 120px;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.search{
+	float: right;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+
+.searchButton{
+	float: right;
+	margin-right: 10px; 
+	margin-top: 15px;
+}
+
+.clock{
+	margin-right: 0px;
+	margin-top: 50px;
+	float: right;
+	width: 200px;
+	height: 30px;
+	font-family: "arial";
+}
+
+#list>li{
+	width: 80px;
+	height: 20px;
+	float: left;
+	text-align: center;
+	line-height: 20px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+
+.two_list{
+width: 80px;
+height: 80px;
+background: #ff3eff;
+display: none;
+padding: 0;
+line-height: 26px;
+font-family: "微软雅黑";
+}
+
+.nav{
+	background-image: url(../pic/标题栏.jpg);
+	width: 1080px;
+	height: 80px;
+	clear: both;
+	margin: 0 auto;
+}
+
+.list_2 li{
+	width: 240px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 28px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	color: red;
+	float: left;
+	text-align: center;
+}
+
+.two{
+	display: none;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+a{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+}
+
+a:hover{
+	color: blue;
+}
+
+.message{
+	background-image: url(../pic/message背景.jpg);
+	width: 1080px;
+	height: 1000px;
+	margin-top: -25px;
+}
+
+.input h2{
+	text-align: center;
+	font-size: 36px; 
+	font-family: "微软雅黑";
+}
+
+.input p{
+	text-indent: 6em;
+	font-family: "微软雅黑";
+	font-size: 18px;
+}
+
+#message{
+	margin-left: 100px;
+	width: 600px;
+	height: 250px;
+	background-color: #EEDCF3;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+
+.button2{
+	margin-left: 600px;
+}
+
+#messageBox{
+	border: 2px solid #974545;
+	width: 780px;
+	height: 500px;
+	overflow-y: scroll;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+
+.connection{
+	width: 100%;
+	height: 185px;
+	clear: both;
+	background-color: #EAE6E6;
+}
+
+.bottom_box{
+	width: 1080px;
+	height: 180px;
+	margin: 0 auto;
+}
+
+.link{
+	background-color: #cf9;
+	width: 535px;
+	height: 180px;
+	float: left;
+}
+
+.link span, .link_2 span{
+	margin-left: 20px;
+}
+
+.link_2{
+	background-color: #feb;
+	width: 535px;
+	height: 180px;
+	float: right;
+}

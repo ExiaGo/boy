@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画之沙 Days</title>
+	<link rel="stylesheet" type="text/css" href="css/main_myFocus_1.css">
+
+	<script type="text/javascript" src="./js/dhzs_myFocus_1.js"></script>
+
+	 <script type="text/javascript">
+		window.onload = function(){
+			var oUl = document.getElementById("list");  //获得list的元素表
+			var aLi = oUl.children;                 //aLi就是导航1元素表
+			for(var i = 0; i<aLi.length; i++){      //循环第i个导航
+				aLi[i].onmouseover = function(){
+					this.children[0].style.display = "block";   //this.children[0]就是选中当前的导航的二级菜单，0就是two_list
+				};
+				aLi[i].onmouseout = function(){
+					this.children[0].style.display = "none";
+				};
+			};
+		};
+	</script>
+	<link rel="shortcut icon" href="./pic/favicon.ico"><!-- 网页图标 -->
+</head>
+<body onload="osTime()">
+    <div class="box">
+		<div class="sign"><img src="./pic/标志.png"></div>
+		<div class="webName"><a href="动画之沙.html"><img src="./pic/动画之沙.png" alt="标题"></a></div>
+		<div class="background1">
+			<div class="searchButton">
+				<input type="button" value="search" onclick="search()">
+			</div>
+			<div class="search">
+				<input type="text">
+			</div>
+			
+			<div class="nav1">
+				<ul id="list">
+					<li class="one_list">游戏频道
+						<ul class="two_list">
+							<li><a href="动画之沙游戏目录.html">游戏介绍</a></li>
+							<li>二级菜单</li>
+							<li>二级菜单</li>
+						</ul>
+					</li>
+					<li class="one_list">导航2
+						<ul class="two_list">
+							<li>二级菜单</li>
+							<li>二级菜单</li>
+							<li>二级菜单</li>
+						</ul>
+					</li>
+					<li class="one_list">导航3
+						<ul class="two_list">
+							<li>二级菜单</li>
+							<li>二级菜单</li>
+							<li>二级菜单</li>
+						</ul>
+					</li>															
+				</ul>
+			</div><!-- nav1 end -->
+			<div class="clock">
+				<label id="clock"></label>
+			</div>
+		</div><!-- background1 end -->
+		<div class="nav">
+			<ul class="list_2"  id="list_2">
+				<li onmouseover="changeC(this)" onmouseout="changeC(this)"><a href="动画之沙一月番.html">一月番</a></li>
+				<li onmouseover="changeC(this)" onmouseout="changeC(this)"><a href="动画之沙四月番.html">四月番</a></li>
+				<li onmouseover="changeC(this)" onmouseout="changeC(this)"><a href="动画之沙七月番.html">七月番</a></li>
+				<li onmouseover="changeC(this)" onmouseout="changeC(this)"><a href="动画之沙十月番.html">十月番</a></li>
+			</ul>
+		</div><!-- nav end -->
+
+		<div class="background2">
+			<div id="content" class="content">
+				<h2>动画介绍之《Days》</h2>
+				<p>今天介绍的动画就是2016年的7月新番<a style="color: red" target="_blank" href="http://baike.baidu.com/link?url=GRFcMhgarmajuGr7s7PWuXq8P-aIDqNPTSkDI0oOYwByM9LXWHbOpileIDlf_HXnxxzot05tmTTo6ayQlt72a_">《Days》</a>，按照日子算都出来了23话了吧，毕竟写这文章的时候已经是12月中了。</p>
+				<p>动画讲述的是主人公柄本尽进入了高中之后，被人拉去了踢五人足球抽人数，但是后来主角喜欢上踢足球时和小伙伴们一起努力取胜的感觉，于是就去参加自己学校的足球队，话说主角根本就不懂足球，居然还来到了这个据称是足球名校读书了，这个就是作者的安排，我其实也是现在才发现的，不过剧情还算流畅，而且当中也挺欢乐的，所以这样子剧情就顺利的发展下去了。</p>
+				<p>以前贴吧看过我写的点评都知道，一般我很少剧透什么的，但是对于来这个网站看的，估计都是对于动画是略有所闻的了，所以我会尽量不怎么剧透的情况下来介绍这个动画的了。这个是题外话啦，我都是想到什么就说什么的了，我其实很少看运动番，更别说足球了，因为现实中对足球也就是高中时候踢过两脚的程度而已，世界杯都是听别人说的，所以啊，一开始对于这番我是抱有0希望的。但是当看完第一话的时候我就觉得这番有出息，先不从是否很专业的表现足球，对于我这样的门外汉来说，动画所表达的已经能够吸引到我了，轻松，热血而又感人加欢乐，就是Days这动画最大的吸引力，对于我来说╮(╯▽╰)╭</p>
+				<p>动画所表达的都是高中足球的一种团队合作力，而从小缺乏小伙伴的主角来说，在这个足球队里，确实能获得不少，而且这番还会激起人们对于足球的兴趣，我有时候选电视节目，看到足球现在有时候都会看一会儿，确实很大的影响，所以，我十分推荐这个番，不管你是否喜欢足球，都推荐大家来看看，这动画我给7.5分（满分当然是10分）</p>
+			</div><!-- content end -->
+		</div><!-- background2 end -->
+		<div class="background3">
+				<img src="./pic/days.jpg" alt="" style="width: 1080px">
+			<div class="video">
+				<embed src='http://player.youku.com/player.php/sid/XMTYyODcxNzQxNg==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+			</div>
+			<div class="content2">
+				<p>好了，这期就介绍这么多啦，左边放上优酷视频 Days 的第一话，大家喜欢的话也可以到网上看看，我一般都是在哔哩哔哩这里看，附上链接<a href="http://bangumi.bilibili.com/anime/5063?from=baidu_aladdin" target="_blank" style="color: red">Days视频</a></p>
+				<p>谢谢大家的阅览~</p>
+			</div>
+		</div><!-- background3 end -->
+		<div class="fixed_box">
+			<div class="name"><a href="javascript:returnTop();">TOP</a></div>
+			<div class="name"><a href="#">导航1</a></div>
+			<div class="name"><a href="#">导航2</a></div>
+			<div class="name"><a href="#">导航3</a></div>
+		</div><!-- fixed_box -->
+	</div><!-- box end -->
+	<div id="connection" class="connection">
+		<div class="bottom_box">
+			<div class="link">
+				<br><span>友情链接：<a href="http://tieba.baidu.com/f?kw=%B6%AF%B8%D0%D0%C2%CA%C6%C1%A6">动感新势力</a></span>
+			</div>
+			<div class="link_2">
+				<br><span>站长：<a href="http://tieba.baidu.com/home/main?id=4a31c9e4c9b1b4efc8cb4405&fr=userbar">射杀达人</a></span>
+			</div>
+		</div><!-- bottom_box end -->
+	</div><!-- connection end -->
+</body>
+</html>

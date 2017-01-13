@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画之沙</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="./js2/myfocus-2.0.1.min.js"></script><!--引入myFocus库-->
+	<script type="text/javascript" src="./js/dhzs.js"></script>
+	<script type="text/javascript">
+		myFocus.set({
+			id:'myFocus',//myFocus这个ID是插件中的固定名字，可以进入myFocus修改
+			pattern:'mF_liquid',//风格应用的名称
+		    time:3,//切换时间间隔(秒)
+		    trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+		    width:1000,//设置图片区域宽度(像素)
+		    height:310,//设置图片区域高度(像素)
+		    txtHeight:'default'//文字层高度设置(像素),'default'为默认高度，0为隐藏
+	    });
+	 </script>
+	 <script type="text/javascript">
+		window.onload = function(){
+			var oUl = document.getElementById("list");  //获得list的元素表
+			var aLi = oUl.children;                 //aLi就是导航1元素表
+			for(var i = 0; i<aLi.length; i++){      //循环第i个导航
+				aLi[i].onmouseover = function(){
+					this.children[0].style.display = "block";   //this.children[0]就是选中当前的导航的二级菜单，0就是two_list
+				};
+				aLi[i].onmouseout = function(){
+					this.children[0].style.display = "none";
+				};
+			};
+		};
+	</script>
+	<link rel="shortcut icon" href="./pic/favicon.ico"><!-- 网页图标 -->
+</head>
+<body onload="osTime()">
+    <div class="box">
+		<div class="sign"><img src="./pic/标志.png"></div>
+		<div class="webName"><a href="#"><img src="./pic/动画之沙.png" alt="标题"></a></div>
+		<div class="background1">
+			<div class="searchButton">
+				<input type="button" value="search" onclick="search()">
+			</div>
+			<div class="search">
+				<input type="text">
+			</div>
+			
+			<div class="nav1">
+				<ul id="list">
+					<li class="one_list">游戏频道
+						<ul class="two_list">
+							<li><a href="动画之沙游戏目录.html">游戏介绍</a></li>
+							<li>二级菜单</li>
+							<li>二级菜单</li>
+						</ul>
+					</li>
+					<li class="one_list">导航2
+						<ul class="two_list">
+							<li>二级菜单</li>
+							<li>二级菜单</li>
+							<li>二级菜单</li>
+						</ul>
+					</li>
+					<li class="one_list">导航3
+						<ul class="two_list">
+							<li>二级菜单</li>
+							<li>二级菜单</li>
+							<li>二级菜单</li>
+						</ul>
+					</li>															
+				</ul>
+			</div><!-- nav1 end -->
+			<div class="clock">
+				<label id="clock"></label>
+			</div>
+			<div class="gate">
+				<button><img src="./pic/留言板.jpg" alt="留言板" onclick="goto()"><br>留言板</button>
+			</div>
+		</div><!-- background1 end -->
+		<div class="nav">
+			<ul class="list_2"  id="list_2">
+				<li onmouseover="changeC(this)" onmouseout="changeC(this)"><a href="动画之沙一月番.html">一月番</a></li>
+				<li onmouseover="changeC(this)" onmouseout="changeC(this)"><a href="动画之沙四月番.html">四月番</a></li>
+				<li onmouseover="changeC(this)" onmouseout="changeC(this)"><a href="动画之沙七月番.html">七月番</a></li>
+				<li onmouseover="changeC(this)" onmouseout="changeC(this)"><a href="动画之沙十月番.html">十月番</a></li>
+			</ul>
+		</div><!-- nav end -->
+		<div id="myFocus">
+			<div class="loading">
+				<img src="./pic/loading.gif" alt="加载中">
+			</div>
+			<div class="pic"><!-- 这个pic的名字是固定的，请务必要用一个div包住要展示的图片用于使用myFocus -->
+				<ul>
+					<li><a href="动画之沙 Days.html"><img src="./pic/days.jpg" alt="青春泪水洒满足球场"></a></li>
+					<li><a href="javascript:0"><img src="./pic/高达5.png" alt="高达不是主题的高达动画"></a></li>
+					<li><a href="javascript:0"><img src="./pic/亚人.jpg" alt="无法死亡的人之爱恨成仇"></a></li>
+					<li><a href="javascript:0"><img src="./pic/齐木楠雄4.jpg" alt="吐槽剧情最有趣的番"></a></li>
+				</ul>
+			</div>
+		</div> <!-- myFocus end -->
+		<div class="background2">
+			<div id="content" class="content">
+				<h2>网站介绍</h2>
+				<p>本网站是介绍建站人，就是我所看过的动画，玩过的游戏，各种点评，当然就是个人的感想罢了，我也很欢迎来网站的人加入我的评论，我就是希望我的评论能够给想看动画，但是又不知道什么动画好看的人带来帮助，同时，因为看过动画后又没有一个很好的地方发表自己的感想，和同好们讨论动画里面的剧情，解开一些没有想到的东西，这里就是一个思想交流的大家庭。</p>
+				<p>by:贴吧 射杀达人</p>
+			</div><!-- content end -->
+		</div><!-- background2 end -->
+		<div class="group">
+			
+			<a href="javascript:0" class="hvr-rectangle-out"><div class="A">
+				<span id="g1">动<br>画</span>
+			</div></a>
+			<a href="javascript:0" class="hvr-rectangle-in"><div class="G">
+				<span id="g2">游<br>戏</span>
+			</div></a>
+			<a href="javascript:0" class="hvr-shutter-in-horizontal"><div class="M">
+				<span id="g3">电<br>影</span>
+			</div></a>
+			<a href="javascript:0" class="hvr-shutter-out-horizontal"><div class="O">
+				<span id="g4">其<br>它</span>
+			</div></a>
+		</div>
+		<div class="fixed_box">
+			<div class="name"><a href="javascript:returnTop();">TOP</a></div>
+			<div class="name"><a href="#myFocus">推荐</a></div>
+			<div class="name"><a href="#content">主页</a></div>
+			<div class="name"><a href="#connection">BOTTOM</a></div>
+		</div><!-- fixed_box -->
+	</div><!-- box end -->
+	<div id="connection" class="connection">
+		<div class="bottom_box">
+			<div class="link">
+				<br><span>友情链接：<a href="http://tieba.baidu.com/f?kw=%B6%AF%B8%D0%D0%C2%CA%C6%C1%A6">动感新势力</a></span>
+			</div>
+			<div class="link_2">
+				<br><span>站长：<a href="http://tieba.baidu.com/home/main?id=4a31c9e4c9b1b4efc8cb4405&fr=userbar">射杀达人</a></span>
+			</div>
+		</div><!-- bottom_box end -->
+	</div><!-- connection end -->
+</body>
+</html>
