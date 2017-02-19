@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>动画之沙</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="./js/jquery.js"></script>
 	<script type="text/javascript" src="./js2/myfocus-2.0.1.min.js"></script><!--引入myFocus库-->
 	<script type="text/javascript" src="./js/dhzs.js"></script>
 	<script type="text/javascript">
@@ -18,9 +19,10 @@
 	    });
 	 </script>
 	 <script type="text/javascript">
-		window.onload = function(){
+		$(document).ready( function(){
 			var oUl = document.getElementById("list");  //获得list的元素表
-			var aLi = oUl.children;                 //aLi就是导航1元素表
+			var aLi = oUl.children;
+		              //aLi就是导航1元素表
 			for(var i = 0; i<aLi.length; i++){      //循环第i个导航
 				aLi[i].onmouseover = function(){
 					this.children[0].style.display = "block";   //this.children[0]就是选中当前的导航的二级菜单，0就是two_list
@@ -29,7 +31,7 @@
 					this.children[0].style.display = "none";
 				};
 			};
-		};
+		});
 	</script>
 	<link rel="shortcut icon" href="./pic/favicon.ico"><!-- 网页图标 -->
 </head>

@@ -11,7 +11,7 @@ function returnTop(){
 }
 
 function changeC(li){            //这个li实际上没有用，只是用于表示是li元素
-	var a = document.getElementById("list_2").children;	 //这里的a实际上就是li元素
+	var a = document.getElementById("list_2").children;//这里的a实际上就是li元素
 	for(var i = 0; i < a.length; i++){
 		a[i].onmouseover = function(){            //可以看到每一个li元素当有鼠标在上面的时候
 			this.style.backgroundColor = "red";   //这个this其实就是li元素，当然这里是用a[i]

@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<title>动画之沙游戏</title>
 	<link rel="stylesheet" type="text/css" href="css/main_game.css">
-
+	<script type="text/javascript" src="./js/jquery.js"></script>
 	<script type="text/javascript" src="./js/dhzs_game.js"></script>
 
 	<script type="text/javascript">
-		window.onload = function(){
+		$(document).ready( function(){
 			var oUl = document.getElementById("list");  //获得list的元素表
 			var aLi = oUl.children;                 //aLi就是导航1元素表
 			for(var i = 0; i<aLi.length; i++){      //循环第i个导航
@@ -19,7 +19,7 @@
 					this.children[0].style.display = "none";
 				};
 			};
-		};
+		});
 	</script>
 	<link rel="shortcut icon" href="./pic/favicon.ico">
 </head>
