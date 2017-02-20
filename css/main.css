@@ -39,12 +39,17 @@
 }
 
 .clock{
+  margin-left: 400px;
 	margin-right: 0px;
 	margin-top: 50px;
 	float: right;
 	width: 200px;
 	height: 30px;
 	font-family: "arial";
+}
+
+.gate{
+  margin-left: 300px;
 }
 
 #list>li{
