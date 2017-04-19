@@ -19,7 +19,7 @@
 }
 
 .background1{
-	background-image: url(../pic/天空.png);
+	background-image: url(../pic/天空_1.jpg);
 	width: 600px;
 	height: 120px;
 	float: left;
@@ -136,7 +136,7 @@ a:hover{
 }
 
 .background2{
-	background-image: url(../pic/星空.jpg);
+	background-image: url(../pic/星空_1.jpg);
 	width: 1080px;
 	height: 400px;
 	margin-top: -15px;
@@ -168,12 +168,14 @@ a:hover{
 	width: 264px;
 	height: 600px;
 	float: left;
+  margin-left: 2px;
 }
 
 .M, .O{
 	width: 264px;
 	height: 600px;
 	float: left;
+  margin-left: 2px;
 }
 
 .group span{
@@ -212,7 +214,7 @@ a:hover{
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   /*background: #e1e1e1;*/
-  background-image: url(../pic/春天2.png);
+  background-image: url(../pic/春天2.jpg);
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -227,7 +229,7 @@ a:hover{
   right: 0;
   bottom: 0;
 /*  background: #2098d1;*/
-  background-image: url(../pic/动画.png);
+  background-image: url(../pic/动画.jpg);
   -webkit-transform: scale(0);
   transform: scale(0);
   -webkit-transition-property: transform;
@@ -257,7 +259,7 @@ a:hover{
   -moz-osx-font-smoothing: grayscale;
   position: relative;
 /*  background: #2098d1;*/
-  background-image: url(../pic/游戏.png);
+  background-image: url(../pic/游戏.jpg);
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -302,7 +304,7 @@ a:hover{
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   /*background: #2098d1;*/
-  background-image: url(../pic/电影.png);
+  background-image: url(../pic/电影.jpg);
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -364,7 +366,7 @@ a:hover{
   left: 0;
   right: 0;
   /*background: #2098d1;*/
-  background-image: url(../pic/其它.png);
+  background-image: url(../pic/其它.jpg);
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 50%;
