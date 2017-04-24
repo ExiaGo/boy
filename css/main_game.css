@@ -25,7 +25,7 @@
 }
 
 .background1{
-	background-image: url(../pic/天空.png);
+	background-image: url(../pic/天空_1.jpg);
 	width: 600px;
 	height: 120px;
 	float: left;
@@ -55,7 +55,7 @@
 }
 
 .gate{
-  margin-left: 280px;
+    margin-left: 280px;
 }
 
 #list>li{
